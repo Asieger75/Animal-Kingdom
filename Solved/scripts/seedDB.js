@@ -3,9 +3,7 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/animaldb");
 
 const animalSeed = [
   {
@@ -150,9 +148,8 @@ const animalSeed = [
   },
 ];
 
-db.animalSeed
-  .remove({})
-  .then(() => db.animalSeed.collection.insertMany(animalSeed))
+db.Animal.remove({})
+  .then(() => db.Animal.collection.insertMany(animalSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
