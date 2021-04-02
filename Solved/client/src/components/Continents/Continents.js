@@ -9,7 +9,7 @@ function Continent() {
       <header class="jumbotron">
         <h1 class="display-3">Welcome to the Animal Kingdom! </h1>
         <p class="lead">
-          learn all about animals in their cooresponding continents!
+          Learn all about animals in their corresponding continents!
         </p>
         <p1 id="currentDay" class="leads"></p1>
       </header>
