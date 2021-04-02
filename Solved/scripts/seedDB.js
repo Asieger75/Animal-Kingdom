@@ -121,11 +121,32 @@ const animalSeed = [
     continent: "Europe",
   },
   {
-    name: "European eel",
+    name: "Leafy sea dragon",
     type: "fish",
     synopsis:
-      " The European eel (Anguilla anguilla) is a species of eel, a snake-like, catadromous fish. They are normally around 60–80 cm (2.0–2.6 ft) and rarely reach more than 1 m (3 ft 3 in), but can reach a length of up to 1.5 m (4 ft 11 in) in exceptional cases. Eels have been important sources of food both as adults including the famous jellied eels of East London and as glass eels. Glass-eel fishing using basket traps has been of significant economic value in many river estuaries on the western seaboard of Europe. The European eel is a critically endangered species. Since the 1970s, the numbers of eels reaching Europe is thought to have declined by around 90% (possibly even 98%). Contributing factors include overfishing, parasites such as Anguillicola crassus, barriers to migration such as hydroelectric dams, and natural changes in the North Atlantic oscillation, Gulf Stream, and North Atlantic drift.",
-    continent: "Europe",
+      " The leafy seadragon (Phycodurus eques) or Glauert's seadragon, is a marine fish in the family Syngnathidae, which includes seadragons, pipefish, and seahorses. It is the only member of the genus Phycodurus. Leafy seadragon skeleton It is found along the southern and western coasts of Australia. The name is derived from the appearance, with long leaf-like protrusions coming from all over the body. These protrusions are not used for propulsion; they serve only as camouflage. The leafy seadragon propels itself by means of a pectoral fin on the ridge of its neck and a dorsal fin on its back closer to the tail end. These small fins are almost completely transparent and difficult to see as they undulate minutely to move the creature sedately through the water, completing the illusion of floating seaweed.",
+    continent: "Oceania",
+  },
+  {
+    name: "Orca whale",
+    type: "mammal",
+    synopsis:
+      " The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is recognizable by its black body with a white underside and patches near each eye. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, killer whales can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean. They are highly social; some populations are composed of matrilineal family groups (pods) which are the most stable of any animal species. Their sophisticated hunting techniques and vocal behaviours, which are often specific to a particular group and passed across generations, have been described as manifestations of animal culture..",
+    continent: "Oceana",
+  },
+  {
+    name: "Wandering albatross",
+    type: "bird",
+    synopsis:
+      " The wandering albatross, snowy albatross, or white-winged albatross is a large seabird from the family Diomedeidae, which has a circumpolar range in the Southern Ocean. It was the last species of albatross to be described, and was long considered the same species as the Tristan albatross and the Antipodean albatross. A few authors still consider them all subspecies of the same species.The wandering albatross has the longest wingspan of any living bird, typically ranging from 2.51 to 3.5 m (8 ft 3 in to 11 ft 6 in), with a mean span of 3.1 m (10 ft 2 in) in the Bird Island, South Georgia colony and an average of exactly 3 m (9 ft 10 in) in 123 birds measured off the coast of Malabar, New South Wales. As a result of its wingspan, it is capable of remaining in the air without flapping its wings for several hours at a time (travelling 22 m for every metre of drop). The length of the body is about 107 to 135 cm (3 ft 6 in to 4 ft 5 in) with females being slightly smaller than males. ",
+    continent: "Oceana",
+  },
+  {
+    name: "Salt water crocodile",
+    type: "reptile",
+    synopsis:
+      " The saltwater crocodile is the largest living reptile and crocodilian known to science.[3][4][5] Males grow to a length of up to 6 m (20 ft), rarely exceeding 6.3 m (21 ft) or a weight of 1,000–1,300 kg (2,200–2,900 lb). Females are much smaller and rarely surpass 3 m (10 ft).It is also known as the estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile or informally as saltie. The saltwater crocodile is a large and opportunistic hypercarnivorous apex predator. It ambushes most of its prey and then drowns or swallows it whole. It is capable of prevailing over almost any animal that enters its territory, including other apex predators such as sharks, varieties of freshwater and saltwater fish including pelagic species, invertebrates such as crustaceans, various reptiles, birds and mammals, including humans.",
+    continent: "Oceana",
   },
 ];
 
