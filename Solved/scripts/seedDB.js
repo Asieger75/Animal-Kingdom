@@ -4,133 +4,131 @@ const db = require("../models");
 // This file empties the Books collection and inserts the books below
 
 mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/reactreadinglist"
+  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
 );
 
-const bookSeed = [
+const animalSeed = [
   {
-    title: "The Dead Zone",
-    author: "Stephen King",
+    name: "Lion",
+    type: "mammal",
     synopsis:
-      "A number-one national best seller about a man who wakes up from a five-year coma able to see people's futures and the terrible fate awaiting mankind in The Dead Zone - a \"compulsive page-turner\" (The Atlanta Journal-Constitution). Johnny Smith awakens from a five-year coma after his car accident and discovers that he can see people's futures and pasts when he touches them. Many consider his talent a gift; Johnny feels cursed. His fiancée married another man during his coma, and people clamor for him to solve their problems. When Johnny has a disturbing vision after he shakes the hand of an ambitious and amoral politician, he must decide if he should take drastic action to change the future. The Dead Zone is a \"faultlessly paced...continuously engrossing\" (Los Angeles Times) novel of second sight.",
-    date: new Date(Date.now())
+      " A large, powerfully built cat that is second in size only to the tiger. The proverbial “king of beasts,” the lion has been one of the best-known wild animals since earliest times. Lions are most active at night and live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.",
+    continent: "Africa",
   },
   {
-    title: "Lord of the Flies",
-    author: "William Golding",
+    name: "Shoebill",
+    type: "bird",
     synopsis:
-      "The tale of a party of shipwrecked schoolboys, marooned on a coral island, who at first enjoy the freedom of the situation but soon divide into fearsome gangs which turn the paradise island into a nightmare of panic and death.",
-    date: new Date(Date.now())
+      "A large African wading bird, the species is named for its clog-shaped bill, which is an adaptation for catching and holding the large, slippery lungfish, its favourite food. This big bird also eats turtles, fish, and young crocodiles. Shoebills stand about 115 cm (3.8 feet) tall. They are entirely gray, with broad wings and long legs. The head is large in proportion to the body, and the eyes are also exceptionally large. The shoebill claps the mandibles of its bill together as a display, producing a loud, hollow sound. Like herons and pelicans, shoebills fly with the head held back against the body.",
+    continent: "Africa",
   },
   {
-    title: "The Catcher in the Rye",
-    author: "J.D. Salinger",
+    name: "Chameleon",
+    type: "reptile",
     synopsis:
-      "The Catcher in the Rye is a 1951 novel by J. D. Salinger. A controversial novel originally published for adults, it has since become popular with adolescent readers for its themes of teenage angst and alienation. It has been translated into almost all of the world's major languages. Around 1 million copies are sold each year with total sales of more than 65 million books. The novel's protagonist Holden Caulfield has become an icon for teenage rebellion. The novel also deals with complex issues of innocence, identity, belonging, loss, and connection.",
-    date: new Date(Date.now())
+      "(family Chamaeleonidae), any of a group of primarily arboreal (tree-dwelling) Old World lizards best known for their ability to change body colour. Other characteristics of chameleons include zygodactylous feet (with toes fused into opposed bundles of two and three), acrodont dentition (with the teeth attached to the edge of the jaw), eyes that move independently, atrophied venom glands that produce harmless trace amounts of venom, and a long, slender projectile tongue. ",
+    continent: "Africa",
   },
   {
-    title: "The Punch Escrow",
-    author: "Tal M. Klein",
+    name: "Great White Shark",
+    type: "fish",
     synopsis:
-      "It's the year 2147. Advancements in nanotechnology have enabled us to control aging. We’ve genetically engineered mosquitoes to feast on carbon fumes instead of blood, ending air pollution. And teleportation has become the ideal mode of transportation, offered exclusively by International Transport―the world’s most powerful corporation, in a world controlled by corporations. Joel Byram spends his days training artificial-intelligence engines to act more human and trying to salvage his deteriorating marriage. He’s pretty much an everyday twenty-second century guy with everyday problems―until he’s accidentally duplicated while teleporting. Now Joel must outsmart the shadowy organization that controls teleportation, outrun the religious sect out to destroy it, and find a way to get back to the woman he loves in a world that now has two of him.",
-    date: new Date(Date.now())
+      "any member of the largest living species of the mackerel sharks (Lamnidae) and one of the most powerful and dangerous predatory sharks in the world. Starring as the villain of movies such as Jaws (1975), the white shark is much maligned and publicly feared. However, surprisingly little is understood of its life and behaviour.",
+    continent: "Africa",
   },
   {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: "J.K. Rowling",
+    name: "American Bison",
+    type: "mammal",
     synopsis:
-      "Harry Potter has no idea how famous he is. That's because he's being raised by his miserable aunt and uncle who are terrified Harry will learn that he's really a wizard, just as his parents were. But everything changes when Harry is summoned to attend an infamous school for wizards, and he begins to discover some clues about his illustrious birthright. From the surprising way he is greeted by a lovable giant, to the unique curriculum and colorful faculty at his unusual school, Harry finds himself drawn deep inside a mystical world he never knew existed and closer to his own noble destiny.",
-    date: new Date(Date.now())
+      "The American bison also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Its historical range, by 9000 BC, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750.",
+    continent: "North America",
   },
   {
-    title: "Coraline",
-    author: "Neil Gaiman",
+    name: "American paddlefish",
+    type: "fish",
     synopsis:
-      "When Coraline steps through a door to find another house strangely similar to her own (only better), things seem marvelous. But there's another mother there, and another father, and they want her to stay and be their little girl. They want to change her and never let her go. Coraline will have to fight with all her wit and courage if she is to save herself and return to her ordinary life.",
-    date: new Date(Date.now())
+      "An archaic freshwater fish with a paddlelike snout, a wide mouth, smooth skin, and a cartilaginous skeleton. A relative of the sturgeon, the paddlefish makes up the family Polyodontidae in the order Acipenseriformes. A paddlefish feeds with its mouth gaping open and its gill rakers straining plankton from the water through its gills.The American paddlefish (Polyodon spathula), also called the Mississippi paddlefish or spoonbill, is greenish or gray and averages about 18 kg (40 pounds); however, some specimens can grow up to 2.2 metres (7.2 feet) long and 90.7 kg (200 pounds) in weight. It lives in open waters of the Mississippi River basin, Lake Huron, and parts of southern Canada.",
+    continent: "North America",
   },
   {
-    title: "Code: The Hidden Language of Computer Hardware and Software",
-    author: "Charles Petzold",
+    name: "Peregrine falcon",
+    type: "bird",
     synopsis:
-      "What do flashlights, the British invasion, black cats, and seesaws have to do with computers? In CODE, they show us the ingenious ways we manipulate language and invent new means of communicating with each other. And through CODE, we see how this ingenuity and our very human compulsion to communicate have driven the technological innovations of the past two centuries. Using everyday objects and familiar language systems such as Braille and Morse code, author Charles Petzold weaves an illuminating narrative for anyone who’s ever wondered about the secret inner life of computers and other smart machines. It’s a cleverly illustrated and eminently comprehensible story—and along the way, you’ll discover you’ve gained a real context for understanding today’s world of PCs, digital media, and the Internet. No matter what your level of technical savvy, CODE will charm you—and perhaps even awaken the technophile within.",
-    date: new Date(Date.now())
+      "Also called duck hawk, the most widely distributed species of bird of prey, with breeding populations on every continent except Antarctica and many oceanic islands. Sixteen subspecies are recognized. The peregrine falcon is best known for its diving speed during flight—which can reach more than 300 km (186 miles) per hour—making it not only the world’s fastest bird but also the world’s fastest animal. Its Coloration is a bluish gray, with black bars on the white to yellowish white underparts. Adult peregrines range from about 36 to 49 cm (14.2 to 19.3 inches) in length. Strong and fast, they hunt by flying high and then diving at their prey. Attaining tremendous speeds of more than 320 km (200 miles) per hour, they strike with clenched talons and kill by impact. Their prey includes ducks and a wide variety of songbirds and shorebirds.",
+    continent: "North America",
   },
   {
-    title: "The Everything Store: Jeff Bezos and the Age of Amazon",
-    author: "Brad Stone",
+    name: "American alligator",
+    type: "reptile",
     synopsis:
-      "The definitive story of Amazon.com, one of the most successful companies in the world, and of its driven, brilliant founder, Jeff Bezos. Amazon.com started off delivering books through the mail. But its visionary founder, Jeff Bezos, wasn't content with being a bookseller. He wanted Amazon to become the everything store, offering limitless selection and seductive convenience at disruptively low prices. To do so, he developed a corporate culture of relentless ambition and secrecy that's never been cracked. Until now. Brad Stone enjoyed unprecedented access to current and former Amazon employees and Bezos family members, giving listeners the first in-depth, fly-on-the-wall account of life at Amazon. Compared to tech's other elite innovators - Jobs, Gates, Zuckerberg - Bezos is a private man. But he stands out for his restless pursuit of new markets, leading Amazon into risky new ventures like the Kindle and cloud computing, and transforming retail in the same way Henry Ford revolutionized manufacturing. The Everything Store will be the revealing, definitive biography of the company that placed one of the first and largest bets on the Internet and forever changed the way we shop and read.",
-    date: new Date(Date.now())
+      "Alligators, like other crocodilians, are large animals with powerful tails that are used both in defense and in swimming. Their eyes, ears, and nostrils are placed on top of their long head and project slightly above the water when the reptiles float at the surface, as they often do. Alligators can be differentiated from true crocodiles by the form of their jaw and teeth. Alligators possess a broad U-shaped snout and have an “overbite”; that is, all the teeth of the lower jaw fit within ",
+    continent: "North America",
   },
   {
-    title: "Total Recall: My Unbelievably True Life Story",
-    author: "Arnold Schwarzenegger",
+    name: "Dingo",
+    type: "mammal",
     synopsis:
-      "In his signature larger-than-life style, Arnold Schwarzenegger’s Total Recall is a revealing self-portrait of his illustrious, controversial, and truly unique life. The greatest immigrant success story of our time. His story is unique, and uniquely entertaining, and he tells it brilliantly in these pages. He was born in a year of famine, in a small Austrian town, the son of an austere police chief. He dreamed of moving to America to become a bodybuilding champion and a movie star. By the age of twenty-one, he was living in Los Angeles and had been crowned Mr. Universe. Within five years, he had learned English and become the greatest bodybuilder in the world. Within ten years, he had earned his college degree and was a millionaire from his business enterprises in real estate, landscaping, and bodybuilding. He was also the winner of a Golden Globe Award for his debut as a dramatic actor in Stay Hungry. Within twenty years, he was the world’s biggest movie star, the husband of Maria Shriver, and an emerging Republican leader who was part of the Kennedy family. Thirty-six years after coming to America, the man once known by fellow body­builders as the Austrian Oak was elected governor of California, the seventh largest economy in the world. He led the state through a budget crisis, natural disasters, and political turmoil, working across party lines for a better environment, election reforms, and bipartisan solutions. With Maria Shriver, he raised four fantastic children. In the wake of a scandal he brought upon himself, he tried to keep his family together. Until now, he has never told the full story of his life, in his own voice. Here is Arnold, with total recall.",
-    date: new Date(Date.now())
+      "Dingo, also called warrigal, member of the family Canidae native to Australia. Most authorities regard dingoes as a subspecies of the wolf (Canis lupus dingo); however, some authorities consider dingoes to be their own species (C. dingo). The name dingo is also used to describe wild dogs of Malaysia, Thailand, the Philippines, and New Guinea. The dingo was apparently introduced to Southeast Asia, the Philippines, Indonesia, and Australia by sea travelers..",
+    continent: "Australia",
   },
   {
-    title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
-    author: "Ashlee Vance",
+    name: "Frilled lizard",
+    type: "reptile",
     synopsis:
-      "In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of one of Silicon Valley's most exciting, unpredictable, and ambitious entrepreneurs - a real-life Tony Stark - and a fascinating exploration of the renewal of American invention and its new makers. Elon Musk spotlights the technology and vision of Elon Musk, the renowned entrepreneur and innovator behind SpaceX, Tesla, and SolarCity, who sold one of his Internet companies, PayPal, for $1.5 billion. Ashlee Vance captures the full spectacle and arc of the genius' life and work, from his tumultuous upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits. Vance uses Musk's story to explore one of the pressing questions of our age: Can the nation of inventors and creators who led the modern world for a century still compete in an age of fierce global competition? He argues that Musk - one of the most unusual and striking figures in American business history - is a contemporary, visionary amalgam of legendary inventors and industrialists, including Thomas Edison, Henry Ford, Howard Hughes,and Steve Jobs. More than any other entrepreneur today, Musk has dedicated his energies and his own vast fortune to inventing a future that is as rich and far reaching as the visionaries of the golden age of science-fiction fantasy.",
-    date: new Date(Date.now())
+      "(Chlamydosaurus kingii), type of reptile found in Australia and New Guinea that can run standing up on its hind legs with its forelegs and tail in the air. The scaly membrane around its neck is used as a large part of the lizard’s defensive posture. Normally, the neck frill, often as wide as the lizard is long, lies like a cape over the shoulders. When the lizard is irritated or threatened, it can raise the frill perpendicular to its body, enabling it to surprise its enemies by suddenly displaying a head several times its normal size.Its common names come from the large frill around its neck, which usually stays folded against the lizard's body. C. kingii is largely arboreal, spending the majority of its time in the trees. Its diet consists mainly of insects and small vertebrates. Frill-necked lizards, or 'frillies' as some call them, will occasionally eat plants as well, although this behaviour is uncommon. It's a relatively large lizard, averaging 85 cm (2.79 ft) in total length (including tail) and is kept as an exotic pet.",
+    continent: "Australia",
   },
   {
-    title: "Steve Jobs",
-    author: "Walter Isaacson",
+    name: "Cockatoo",
+    type: "bird",
     synopsis:
-      "Based on more than 40 interviews with Jobs conducted over two years - as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues - Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. At a time when America is seeking ways to sustain its innovative edge, and when societies around the world are trying to build digital-age economies, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the 21st century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering. Although Jobs cooperated with this book, he asked for no control over what was written. He put nothing off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes,and colleagues provide an unvarnished view of the passions, perfectionism, obsessions, artistry, devilry, and compulsion for control that shaped his approach to business and the innovative products that resulted. Driven by demons, Jobs could drive those around him to fury and despair. But his personality and products were interrelated, just as Apple's hardware and software tended to be, as if part of an integrated system. His tale is instructive and cautionary, filled with lessons about innovation, character, leadership, and values.",
-    date: new Date(Date.now())
+      "Cockatoo, (family Cacatuidae), any of the 21 species of crested parrots (order Psittaciformes) found in Australia as well as in New Guinea and the Solomon Islands. Most are white with touches of red or yellow; some are black. All have a massive scimitar-like beak for cracking nuts, digging up roots, or prying grubs from wood; feeding is aided by a strong tongue. Cockatoos are treetop, hole-nesting birds; at times they form large, noisy flocks. Because they are showy, inventive, and affectionate, many are caged as pets. Some live more than 50 years. Cockatoos are recognisable by the prominent crests and curved bills. Their plumage is generally less colourful than that of other parrots, being mainly white, grey or black and often with coloured features in the crest, cheeks or tail. On average they are larger than other parrots; however, the cockatiel, the smallest cockatoo species, is a small bird. The phylogenetic position of the cockatiel remains unresolved, other than that it is one of the earliest offshoots of the cockatoo lineage. ",
+    continent: "Australia",
   },
   {
-    title: "Astrophysics for People in a Hurry",
-    author: "Neil deGrasse Tyson",
+    name: "Rainbow fish",
+    type: "fish",
     synopsis:
-      "What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There's no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson. But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in digestible chapters consumable anytime and anywhere in your busy day. While waiting for your morning coffee to brew, or while waiting for the bus, the train, or the plane to arrive, Astrophysics for People in a Hurry will reveal just what you need to be fluent and ready for the next cosmic headlines: from the big bang to black holes, from quarks to quantum mechanics, and from the search for planets to the search for life in the universe.",
-    date: new Date(Date.now())
+      "The rainbowfish are a family, Melanotaeniidae, of small, colourful, freshwater fish found in northern and eastern Australia, New Guinea, islands in Cenderawasih Bay and Raja Ampat Islands in Indonesia, and in Madagascar.Most species of rainbowfish are less than 12 cm (4.7 in) in length, with some species measuring less than 6 cm (2.4 in), while one species, Melanotaenia vanheurni, reaches lengths of up to 20 cm (7.9 in). They live in a wide range of freshwater habitats, including rivers, lakes, and swamps. Although they spawn all year round, they lay a particularly large number of eggs at the start of the local rainy season. The eggs are attached to aquatic vegetation, and hatch seven to 18 days later. Rainbowfish are omnivorous, feeding on small crustaceans, insect larvae, and algae.",
+    continent: "Australia",
   },
   {
-    title: "1984",
-    author: "George Orwell",
+    name: "1984",
+    type: "George Orwell",
     synopsis:
       "Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother is always watching... A startling and haunting vision of the world, 1984 is so powerful that it is completely convincing from start to finish. No one can deny the influence of this novel, its hold on the imaginations of multiple generations of readers, or the resiliency of its admonitions—a legacy that seems only to grow with the passage of time.",
-    date: new Date(Date.now())
+    continent: "Australia",
   },
   {
     title: "Frankenstein",
     author: "Mary Shelley",
     synopsis:
       "Few creatures of horror have seized readers' imaginations and held them for so long as the anguished monster of Mary Shelley's Frankenstein. The story of Victor Frankenstein's terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. Considering the novel's enduring success, it is remarkable that it began merely as a whim of Lord Byron's. \"We will each write a story,\" Byron announced to his next-door neighbors, Mary Wollstonecraft Godwin and her lover Percy Bysshe Shelley. The friends were summering on the shores of Lake Geneva in Switzerland in 1816, Shelley still unknown as a poet and Byron writing the third canto of Childe Harold. When continued rains kept them confined indoors, all agreed to Byron's proposal. The illustrious poets failed to complete their ghost stories, but Mary Shelley rose supremely to the challenge. With Frankenstein, she succeeded admirably in the task she set for herself: to create a story that, in her own words, \"would speak to the mysterious fears of our nature and awaken thrilling horror -- one to make the reader dread to look round, to curdle the blood, and quicken the beatings of the heart.\"",
-    date: new Date(Date.now())
+    continent: "Australia",
   },
   {
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     synopsis:
       "The authentic edition from Fitzgerald's original publisher. This edition approved by the Holden-Crowther Literary Organisation. The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s. The Great Gatsby is one of the great classics of twentieth-century literature.",
-    date: new Date(Date.now())
+    continent: "Australia",
   },
   {
     title: "Born a Crime: Stories from a South African Childhood",
     author: "Trevor Noah",
     synopsis:
       "Trevor Noah, one of the comedy world's fastest-rising stars and host of The Daily Show, tells his wild coming-of-age story during the twilight of apartheid in South Africa and the tumultuous days of freedom that followed. In this Audible Studios production, Noah provides something deeper than traditional memoirists: powerfully funny observations about how farcical political and social systems play out in our lives. \"Nelson Mandela once said, 'If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.' He was so right. When you make the effort to speak someone elses language, even if it's just basic phrases here and there, you are saying to them, 'I understand that you have a culture and identity that exists beyond me. I see you as a human being.'\" (Trevor Noah)\nAttuned to the power of language at a young age - as a means of acceptance and influence in a country divided, then subdivided, into groups at odds with one another - Noah's raw, personal journey becomes something extraordinary in audio: a true testament to the power of storytelling. With brutal honesty and piercing wit, he forgoes an ordinary reading and, instead, delivers something more intimate, sharing his story with the openness and candor of a close friend. His chameleon-like ability to mimic accents and dialects, to shift effortlessly between languages including English, Xhosa, and Zulu, and to embody characters throughout his childhood - his mother, his gran, his schoolmates, first crushes and infatuations - brings each memory to life in vivid detail. Hearing him directly, you're reminded of the gift inherent in telling one's story and having it heard; of connecting with another, and seeing them as a human being.\nThe stories Noah tells are by turns hilarious, bizarre, tender, dark, and poignant - subsisting on caterpillars during months of extreme poverty, making comically pitiful attempts at teenage romance in a color-obsessed world, thrown into jail as the hapless fall guy for a crime he didn't commit, thrown by his mother from a speeding car driven by murderous gangsters, and more.",
-    date: new Date(Date.now())
-  }
+    continent: "Australia",
+  },
 ];
 
-db.Book
-  .remove({})
+db.Book.remove({})
   .then(() => db.Book.collection.insertMany(bookSeed))
-  .then(data => {
+  .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
     process.exit(1);
   });
