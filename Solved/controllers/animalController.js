@@ -16,4 +16,11 @@ module.exports = {
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
+
+  findbycontinent: function (req, res) {
+    db.animal
+      .find({ continent: req.params.continent })
+      .then((dbModel) => res.json(dbModel))
+      .catch((err) => res.status(422).json(err));
+  },
 };
