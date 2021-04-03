@@ -4,10 +4,12 @@ const Schema = mongoose.Schema;
 const animalSchema = new Schema({
   name: { type: String, required: true },
   type: { type: String, required: true },
-  synopsis: String,
-  continent: { type: String },
+  synopsis: { type: String, required: true },
+  continent: { type: String, required: true },
 });
 
-const Animal = mongoose.model("Animal", animalSchema);
+const animal = mongoose.model("animal", animalSchema);
 
-module.exports = Animal;
+module.exports = animal;
+
+
