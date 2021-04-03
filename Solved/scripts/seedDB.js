@@ -3,9 +3,7 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/animaldb");
 
 const animalSeed = [
   {
@@ -93,32 +91,60 @@ const animalSeed = [
     continent: "Australia",
   },
   {
-    name: "1984",
-    type: "George Orwell",
+    name: "Red deer",
+    type: "mammal",
     synopsis:
-      "Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother is always watching... A startling and haunting vision of the world, 1984 is so powerful that it is completely convincing from start to finish. No one can deny the influence of this novel, its hold on the imaginations of multiple generations of readers, or the resiliency of its admonitions—a legacy that seems only to grow with the passage of time.",
-    continent: "Australia",
+      "The red deer (Cervus elaphus) is one of the largest deer species. A male red deer is called a stag or hart, and a female is called a hind. The red deer inhabits most of Europe, the Caucasus Mountains region, Asia Minor, Iran, parts of western Asia, and central Asia. It also inhabits the Atlas Mountains region between Morocco and Tunisia in northwestern Africa, being the only species of deer to inhabit Africa. Red deer have been introduced to other areas, including Australia, New Zealand, the United States, Canada, Peru, Uruguay, Chile, and Argentina.[2][3] In many parts of the world, the meat (venison) from red deer is used as a food source. Red deer are ruminants, characterized by a four-chambered stomach. Genetic evidence indicates that the red deer, as traditionally defined, is a species group, rather than a single species, though exactly how many species the group includes remains disputed.",
+    continent: "Europe",
   },
   {
-    title: "Frankenstein",
-    author: "Mary Shelley",
+    name: "European bullhead",
+    type: "fish",
     synopsis:
-      "Few creatures of horror have seized readers' imaginations and held them for so long as the anguished monster of Mary Shelley's Frankenstein. The story of Victor Frankenstein's terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. Considering the novel's enduring success, it is remarkable that it began merely as a whim of Lord Byron's. \"We will each write a story,\" Byron announced to his next-door neighbors, Mary Wollstonecraft Godwin and her lover Percy Bysshe Shelley. The friends were summering on the shores of Lake Geneva in Switzerland in 1816, Shelley still unknown as a poet and Byron writing the third canto of Childe Harold. When continued rains kept them confined indoors, all agreed to Byron's proposal. The illustrious poets failed to complete their ghost stories, but Mary Shelley rose supremely to the challenge. With Frankenstein, she succeeded admirably in the task she set for herself: to create a story that, in her own words, \"would speak to the mysterious fears of our nature and awaken thrilling horror -- one to make the reader dread to look round, to curdle the blood, and quicken the beatings of the heart.\"",
-    continent: "Australia",
+      "is a freshwater fish that is widely distributed in Europe, mainly in rivers. It is a member of the family Cottidae, a type of sculpin. It is also known as the miller's thumb, freshwater sculpin, and common bullhead. The European bullhead is a small demersal fish that lives both in cold, clear, fast-flowing small streams and in middle-sized rivers. It also occurs on gravelly shores of cold lakes. Further, it thrives in diluted brackish water of the Northern Baltic Sea. The bullhead has a large broad head and tapering body, large fins and a rounded tail. The eyes are located near the top of the head. To the distinction from the other freshwater sculpin species found in Northern Europe.",
+    continent: "Europe",
   },
   {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
+    name: "European turtle dove",
+    type: "bird",
     synopsis:
-      "The authentic edition from Fitzgerald's original publisher. This edition approved by the Holden-Crowther Literary Organisation. The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s. The Great Gatsby is one of the great classics of twentieth-century literature.",
-    continent: "Australia",
+      "The European turtle dove (Streptopelia turtur) is a member of the bird family Columbidae, the doves and pigeons. It breeds over a wide area of the south western Palearctic including north Africa but migrates to northern sub-Saharan Africa to winter.The European turtle dove may be recognised by its browner colour, and the black-and-white-striped patch on the side of its neck. The tail is notable as the bird flies from the observer; it is wedge shaped, with a dark centre and white borders and tips.",
+    continent: "Europe",
   },
   {
-    title: "Born a Crime: Stories from a South African Childhood",
-    author: "Trevor Noah",
+    name: "Horned viper",
+    type: "reptile",
     synopsis:
-      "Trevor Noah, one of the comedy world's fastest-rising stars and host of The Daily Show, tells his wild coming-of-age story during the twilight of apartheid in South Africa and the tumultuous days of freedom that followed. In this Audible Studios production, Noah provides something deeper than traditional memoirists: powerfully funny observations about how farcical political and social systems play out in our lives. \"Nelson Mandela once said, 'If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.' He was so right. When you make the effort to speak someone elses language, even if it's just basic phrases here and there, you are saying to them, 'I understand that you have a culture and identity that exists beyond me. I see you as a human being.'\" (Trevor Noah)\nAttuned to the power of language at a young age - as a means of acceptance and influence in a country divided, then subdivided, into groups at odds with one another - Noah's raw, personal journey becomes something extraordinary in audio: a true testament to the power of storytelling. With brutal honesty and piercing wit, he forgoes an ordinary reading and, instead, delivers something more intimate, sharing his story with the openness and candor of a close friend. His chameleon-like ability to mimic accents and dialects, to shift effortlessly between languages including English, Xhosa, and Zulu, and to embody characters throughout his childhood - his mother, his gran, his schoolmates, first crushes and infatuations - brings each memory to life in vivid detail. Hearing him directly, you're reminded of the gift inherent in telling one's story and having it heard; of connecting with another, and seeing them as a human being.\nThe stories Noah tells are by turns hilarious, bizarre, tender, dark, and poignant - subsisting on caterpillars during months of extreme poverty, making comically pitiful attempts at teenage romance in a color-obsessed world, thrown into jail as the hapless fall guy for a crime he didn't commit, thrown by his mother from a speeding car driven by murderous gangsters, and more.",
-    continent: "Australia",
+      " It is reputed to be the most dangerous of the European vipers due to its large size, long fangs (up to 13 mm) and high venom toxicity. The specific name, ammodytes, is derived from the Greek words ammos, meaning sand, and dutes, meaning burrower or diver, despite its preference for rocky habitats.. V. ammodytes grows to a maximum total length (body + tail) of 95 cm (37.5 in), although individuals usually measure less than 85 cm (33.5 in).The most distinctive characteristic is a single horn on the snout, just above the rostral scale. It consists of 9–17 scales arranged in 2 (rarely 2 or 4) transverse rows. It grows to a length of about 5 mm (0.20 in) and is actually soft and flexible. ",
+    continent: "Europe",
+  },
+  {
+    name: "Leafy sea dragon",
+    type: "fish",
+    synopsis:
+      " The leafy seadragon (Phycodurus eques) or Glauert's seadragon, is a marine fish in the family Syngnathidae, which includes seadragons, pipefish, and seahorses. It is the only member of the genus Phycodurus. Leafy seadragon skeleton It is found along the southern and western coasts of Australia. The name is derived from the appearance, with long leaf-like protrusions coming from all over the body. These protrusions are not used for propulsion; they serve only as camouflage. The leafy seadragon propels itself by means of a pectoral fin on the ridge of its neck and a dorsal fin on its back closer to the tail end. These small fins are almost completely transparent and difficult to see as they undulate minutely to move the creature sedately through the water, completing the illusion of floating seaweed.",
+    continent: "Oceania",
+  },
+  {
+    name: "Orca whale",
+    type: "mammal",
+    synopsis:
+      " The killer whale or orca (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is recognizable by its black body with a white underside and patches near each eye. Killer whales have a diverse diet, although individual populations often specialize in particular types of prey. Some feed exclusively on fish, while others hunt marine mammals such as seals and other species of dolphin. They have been known to attack baleen whale calves, and even adult whales. Killer whales are apex predators, as no animal preys on them. A cosmopolitan species, killer whales can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas, absent only from the Baltic and Black seas, and some areas of the Arctic Ocean. They are highly social; some populations are composed of matrilineal family groups (pods) which are the most stable of any animal species. Their sophisticated hunting techniques and vocal behaviours, which are often specific to a particular group and passed across generations, have been described as manifestations of animal culture..",
+    continent: "Oceana",
+  },
+  {
+    name: "Wandering albatross",
+    type: "bird",
+    synopsis:
+      " The wandering albatross, snowy albatross, or white-winged albatross is a large seabird from the family Diomedeidae, which has a circumpolar range in the Southern Ocean. It was the last species of albatross to be described, and was long considered the same species as the Tristan albatross and the Antipodean albatross. A few authors still consider them all subspecies of the same species.The wandering albatross has the longest wingspan of any living bird, typically ranging from 2.51 to 3.5 m (8 ft 3 in to 11 ft 6 in), with a mean span of 3.1 m (10 ft 2 in) in the Bird Island, South Georgia colony and an average of exactly 3 m (9 ft 10 in) in 123 birds measured off the coast of Malabar, New South Wales. As a result of its wingspan, it is capable of remaining in the air without flapping its wings for several hours at a time (travelling 22 m for every metre of drop). The length of the body is about 107 to 135 cm (3 ft 6 in to 4 ft 5 in) with females being slightly smaller than males. ",
+    continent: "Oceana",
+  },
+  {
+    name: "Salt water crocodile",
+    type: "reptile",
+    synopsis:
+      " The saltwater crocodile is the largest living reptile and crocodilian known to science.[3][4][5] Males grow to a length of up to 6 m (20 ft), rarely exceeding 6.3 m (21 ft) or a weight of 1,000–1,300 kg (2,200–2,900 lb). Females are much smaller and rarely surpass 3 m (10 ft).It is also known as the estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile or informally as saltie. The saltwater crocodile is a large and opportunistic hypercarnivorous apex predator. It ambushes most of its prey and then drowns or swallows it whole. It is capable of prevailing over almost any animal that enters its territory, including other apex predators such as sharks, varieties of freshwater and saltwater fish including pelagic species, invertebrates such as crustaceans, various reptiles, birds and mammals, including humans.",
+    continent: "Oceana",
   },
 ];
 
