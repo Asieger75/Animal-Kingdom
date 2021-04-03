@@ -178,7 +178,21 @@ const animalSeed = [
     name: "Leoparad seal",
     type: "mammal",
     synopsis:
-      " The leopard seal (Hydrurga leptonyx), also referred to as the sea leopard,[3] is the second largest species of seal in the Antarctic (after the southern elephant seal). Its only natural predator is the killer whale.[4] It feeds on a wide range of prey including cephalopods, other pinnipeds, krill, birds and fish. It is the only species in the genus Hydrurga.The name hydrurga means water worker and leptonyx is the Greek for small clawed.",
+      " The leopard seal (Hydrurga leptonyx), also referred to as the sea leopard,is the second largest species of seal in the Antarctic (after the southern elephant seal). Its only natural predator is the killer whale. It feeds on a wide range of prey including cephalopods, other pinnipeds, krill, birds and fish. It is the only species in the genus Hydrurga.The name hydrurga means water worker and leptonyx is the Greek for small clawed.The leopard seal has a distinctively long and muscular body shape when compared to other seals, but it is perhaps best known for its reptilian-like head and massive jaws which are enormous for its body size and which allow it to be one of the top predators in its environment.",
+    continent: "Antartica",
+  },
+  {
+    name: "Emperor penguin",
+    type: "bird",
+    synopsis:
+      "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica. The male and female are similar in plumage and size, reaching 100 cm (39 in) in length and weighing from 22 to 45 kg (49 to 99 lb). Feathers of the head and back are black and sharply delineated from the white belly, pale-yellow breast and bright-yellow ear patches.Like all penguins it is flightless, with a streamlined body, and wings stiffened and flattened into flippers for a marine habitat. Its diet consists primarily of fish, but also includes crustaceans, such as krill, and cephalopods, such as squid. While hunting, the species can remain submerged around 20 minutes, diving to a depth of 535 m (1,755 ft). It has several adaptations to facilitate this, including an unusually structured haemoglobin to allow it to function at low oxygen levels, solid bones to reduce barotrauma, and the ability to reduce its metabolism and shut down non-essential organ functions",
+    continent: "Antartica",
+  },
+  {
+    name: "Anartic toothfish",
+    type: "fish",
+    synopsis:
+      "Fully grown, these fish (and their warmer-water relative, the Patagonian toothfish, D. eleginoides) can grow to more than 1.7 m (5 ft 7 in) in length and 135 kg in weight, twice as large as the next-largest Antarctic fish. Being large, and consistent with the unstructured food webs of the ocean (i.e., big fish eat little fish regardless of identity, even eating their own offspring), the Antarctic toothfish has been characterized as a voracious predator. Furthermore, by being by far the largest midwater fish in the Southern Ocean, it is thought to fill the ecological role that sharks play in other oceans.Aiding in that role, the Antarctic toothfish is one of only five notothenioid species that, as adults, are neutrally buoyant. This buoyancy is attained at 100–120 cm in length and enables them to spend time above the bottom without expending extra energy.",
     continent: "Antartica",
   },
 ];
