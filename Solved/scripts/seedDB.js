@@ -122,8 +122,8 @@ const animalSeed = [
   },
 ];
 
-db.Book.remove({})
-  .then(() => db.Book.collection.insertMany(bookSeed))
+db.animal.remove({})
+  .then(() => db.animal.collection.insertMany(animalSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
@@ -132,3 +132,5 @@ db.Book.remove({})
     console.error(err);
     process.exit(1);
   });
+
+  
