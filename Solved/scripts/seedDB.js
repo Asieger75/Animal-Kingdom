@@ -136,7 +136,7 @@ const animalSeed = [
     name: "Wandering albatross",
     type: "bird",
     synopsis:
-      " The wandering albatross, snowy albatross, or white-winged albatross is a large seabird from the family Diomedeidae, which has a circumpolar range in the Southern Ocean. It was the last species of albatross to be described, and was long considered the same species as the Tristan albatross and the Antipodean albatross. A few authors still consider them all subspecies of the same species.The wandering albatross has the longest wingspan of any living bird, typically ranging from 2.51 to 3.5 m (8 ft 3 in to 11 ft 6 in), with a mean span of 3.1 m (10 ft 2 in) in the Bird Island, South Georgia colony and an average of exactly 3 m (9 ft 10 in) in 123 birds measured off the coast of Malabar, New South Wales. As a result of its wingspan, it is capable of remaining in the air without flapping its wings for several hours at a time (travelling 22 m for every metre of drop). The length of the body is about 107 to 135 cm (3 ft 6 in to 4 ft 5 in) with females being slightly smaller than males. ",
+      "  It is the largest and most powerful raptor found throughout its range,[4] and among the largest extant species of eagles in the world. It usually inhabits tropical lowland rainforests in the upper (emergent) canopy layer. Destruction of its natural habitat has caused it to vanish from many parts of its former range, and it is nearly extirpated from much of Central America. In Brazil, the harpy eagle is also known as royal-hawk",
     continent: "Oceana",
   },
   {
@@ -146,9 +146,45 @@ const animalSeed = [
       " The saltwater crocodile is the largest living reptile and crocodilian known to science.[3][4][5] Males grow to a length of up to 6 m (20 ft), rarely exceeding 6.3 m (21 ft) or a weight of 1,000–1,300 kg (2,200–2,900 lb). Females are much smaller and rarely surpass 3 m (10 ft).It is also known as the estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile or informally as saltie. The saltwater crocodile is a large and opportunistic hypercarnivorous apex predator. It ambushes most of its prey and then drowns or swallows it whole. It is capable of prevailing over almost any animal that enters its territory, including other apex predators such as sharks, varieties of freshwater and saltwater fish including pelagic species, invertebrates such as crustaceans, various reptiles, birds and mammals, including humans.",
     continent: "Oceana",
   },
+  {
+    name: "Harpy eagle",
+    type: "bird",
+    synopsis:
+      " The harpy eagle (Harpia harpyja) is a neotropical species of eagle. It is also called the American harpy eagle to distinguish it from the Papuan eagle, which is sometimes known as the New Guinea harpy eagle or Papuan harpy eagle. It is the largest and most powerful raptor found throughout its range, and among the largest extant species of eagles in the world. It usually inhabits tropical lowland rainforests in the upper (emergent) canopy layer. Destruction of its natural habitat has caused it to vanish from many parts of its former range, and it is nearly extirpated from much of Central America.The upperside of the harpy eagle is covered with slate-black feathers, and the underside is mostly white, except for the feathered tarsi, which are striped black. A broad black band across the upper breast separates the gray head from the white belly. The head is pale grey, and is crowned with a double crest.",
+    continent: "South America",
+  },
+  {
+    name: "Armadillo",
+    type: "mammal",
+    synopsis:
+      "Armadillos (meaning little armored ones in Spanish) are New World placental mammals in the order Cingulata. The Chlamyphoridae and Dasypodidae are the only surviving families in the order, which is part of the superorder Xenarthra, along with the anteaters and sloths. Nine extinct genera and 21 extant species of armadillo have been described, some of which are distinguished by the number of bands on their armor. All species are native to the Americas, where they inhabit a variety of different environments. Armadillos are characterized by a leathery armor shell and long sharp claws for digging. They have short legs, but can move quite quickly. The average length of an armadillo is about 75 cm (30 in), including tail. The giant armadillo grows up to 150 cm (59 in) and weighs up to 54 kg (119 lb), while the pink fairy armadillo has a length of only 13–15 cm (5–6 in). When threatened by a predator, Tolypeutes species frequently roll up into a ball (these being the only species of Armadillo capable of such).",
+    continent: "South America",
+  },
+  {
+    name: "Piranha",
+    type: "fish",
+    synopsis:
+      " is a freshwater fish that inhabits South American rivers, floodplains, lakes and reservoirs. Although often described as extremely predatory and mainly feeding on fish, their dietary habits vary extensively, and they will also take plant material, leading to their classification as omnivorous.Piranhas have one of the strongest bites found in bony fishes. Relative to body mass, the black piranha (Serrasalmus rhombeus) produces one of the most forceful bites measured in vertebrates. This extremely powerful and dangerous bite is generated by large jaw muscles (adductor mandibulae) that are attached closely to the tip of the jaw, conferring the piranha with a mechanical advantage that favors force production over bite speed. Strong jaws combined with finely serrated teeth make them adept at tearing flesh.",
+    continent: "South America",
+  },
+  {
+    name: "Galapagos tortoise",
+    type: "reptile",
+    synopsis:
+      " The Galápagos tortoise complex or Galápagos giant tortoise complex (Chelonoidis niger and related species) is a species complex of 15 (12 extant and 2-3 extinct) very large tortoise species in the genus Chelonoidis (which also contains three other species from mainland South America). They are the largest living species of tortoise, with some modern Galápagos tortoises weighing up to 417 kg (919 lb). With lifespans in the wild of over 100 years, they are one of the longest-lived vertebrates. A captive individual, Harriet, lived for at least 175 years. Spanish explorers, who discovered the islands in the 16th century, named them after the Spanish galápago, meaning tortoise.The Galápagos tortoises are native to seven of the Galápagos Islands. Shell size and shape vary between populations. On islands with humid highlands, the tortoises are larger, with domed shells and short necks; on islands with dry lowlands, the tortoises are smaller, with saddleback shells and long necks.",
+    continent: "South America",
+  },
+  {
+    name: "Leoparad seal",
+    type: "mammal",
+    synopsis:
+      " The leopard seal (Hydrurga leptonyx), also referred to as the sea leopard,[3] is the second largest species of seal in the Antarctic (after the southern elephant seal). Its only natural predator is the killer whale.[4] It feeds on a wide range of prey including cephalopods, other pinnipeds, krill, birds and fish. It is the only species in the genus Hydrurga.The name hydrurga means water worker and leptonyx is the Greek for small clawed.",
+    continent: "Antartica",
+  },
 ];
 
-db.animal.remove({})
+db.animal
+  .remove({})
   .then(() => db.animal.collection.insertMany(animalSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
@@ -158,5 +194,3 @@ db.animal.remove({})
     console.error(err);
     process.exit(1);
   });
-
-  
