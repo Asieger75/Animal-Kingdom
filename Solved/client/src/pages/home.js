@@ -2,6 +2,9 @@ import Axios from "axios";
 import React from "react"
 import { render } from "react-dom";
 import Continents from'../components/Continents/Continents'
+import NavTabs from '../components/NavTabs/NavTabs'
+import './home.js';
+
 
 class home extends React.Component {
 
@@ -35,10 +38,11 @@ class home extends React.Component {
       
       return posts.map((post, index) => (
         <div key={index} className="animal-display">
-          <h3>{post.title}</h3>
-           <p>{post.type}</p>
+          <h3>{post.name}</h3>
+            <p>{post.type}</p>
           <p>{post.synopsis}</p>
           <p>{post.continent}</p> 
+          <hr></hr>
         </div>
       ));
     };
@@ -49,6 +53,7 @@ class home extends React.Component {
       console.log('state', this.state)
     return (
       <div className="App">
+            < NavTabs />
             <Continents />
             
             <div className= "animals">

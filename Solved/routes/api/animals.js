@@ -5,6 +5,8 @@ const animalController = require("../../controllers/animalController");
 router.route("/")
   .get(animalController.findAll)
   // .post(animalController.create);
+router.route('/')
+
 
 // Matches with "/api/books/:id"
 router
