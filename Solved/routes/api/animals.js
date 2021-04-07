@@ -7,12 +7,10 @@ router.route("/")
   // .post(animalController.create);
 router.route('/')
 
-
 // Matches with "/api/books/:id"
-router
-  .route("/:id")
-  .get(animalController.findById)
-  // .put(animalController.update)
-  // .delete(animalController.remove);
+router.route("/:id").get(animalController.findById);
+router.route();
+// .put(animalController.update)
+// .delete(animalController.remove);
 
 module.exports = router;
