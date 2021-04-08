@@ -1,16 +1,11 @@
 const router = require("express").Router();
 const animalController = require("../../controllers/animalController");
-
-// Matches with "/api/books"
-router.route("/")
-  .get(animalController.findAll)
-  // .post(animalController.create);
-router.route('/')
-
-// Matches with "/api/books/:id"
+router.route("/").get(animalController.findAll);
+router.route("/continent/:continent").get(animalController.findByContinent);
+// .post(animalController.create);
+// Matches with "/api/animal/:id"
 router.route("/:id").get(animalController.findById);
-router.route();
+// router.route();
 // .put(animalController.update)
 // .delete(animalController.remove);
-
 module.exports = router;
