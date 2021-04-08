@@ -2,7 +2,7 @@ const router = require("express").Router();
 const animalController = require("../../controllers/animalController");
 
 router.route("/").get(animalController.findAll);
-router.route("/continent/:continent").get(animalController.findbycontinent);
+router.route("/continent/:continent").get(animalController.findByContinent);
 // .post(animalController.create);
 
 // Matches with "/api/books/:id"
