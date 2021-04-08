@@ -94,7 +94,7 @@ const animalSeed = [
     name: "Red deer",
     type: "mammal",
     synopsis:
-      "The red deer (Cervus elaphus) is one of the largest deer species. A male red deer is called a stag or hart, and a female is called a hind. The red deer inhabits most of Europe, the Caucasus Mountains region, Asia Minor, Iran, parts of western Asia, and central Asia. It also inhabits the Atlas Mountains region between Morocco and Tunisia in northwestern Africa, being the only species of deer to inhabit Africa. Red deer have been introduced to other areas, including Australia, New Zealand, the United States, Canada, Peru, Uruguay, Chile, and Argentina.[2][3] In many parts of the world, the meat (venison) from red deer is used as a food source. Red deer are ruminants, characterized by a four-chambered stomach. Genetic evidence indicates that the red deer, as traditionally defined, is a species group, rather than a single species, though exactly how many species the group includes remains disputed.",
+      "The red deer (Cervus elaphus) is one of the largest deer species. A male red deer is called a stag or hart, and a female is called a hind. The red deer inhabits most of Europe, the Caucasus Mountains region, Asia Minor, Iran, parts of western Asia, and central Asia. It also inhabits the Atlas Mountains region between Morocco and Tunisia in northwestern Africa, being the only species of deer to inhabit Africa. Red deer have been introduced to other areas, including Australia, New Zealand, the United States, Canada, Peru, Uruguay, Chile, and Argentina. In many parts of the world, the meat (venison) from red deer is used as a food source. Red deer are ruminants, characterized by a four-chambered stomach. Genetic evidence indicates that the red deer, as traditionally defined, is a species group, rather than a single species, though exactly how many species the group includes remains disputed.",
     continent: "Europe",
   },
   {
@@ -136,14 +136,14 @@ const animalSeed = [
     name: "Wandering albatross",
     type: "bird",
     synopsis:
-      "  It is the largest and most powerful raptor found throughout its range,[4] and among the largest extant species of eagles in the world. It usually inhabits tropical lowland rainforests in the upper (emergent) canopy layer. Destruction of its natural habitat has caused it to vanish from many parts of its former range, and it is nearly extirpated from much of Central America. In Brazil, the harpy eagle is also known as royal-hawk",
+      "  It is the largest and most powerful raptor found throughout its range, and among the largest extant species of eagles in the world. It usually inhabits tropical lowland rainforests in the upper (emergent) canopy layer. Destruction of its natural habitat has caused it to vanish from many parts of its former range, and it is nearly extirpated from much of Central America. In Brazil, the harpy eagle is also known as royal-hawk",
     continent: "Oceana",
   },
   {
     name: "Salt water crocodile",
     type: "reptile",
     synopsis:
-      " The saltwater crocodile is the largest living reptile and crocodilian known to science.[3][4][5] Males grow to a length of up to 6 m (20 ft), rarely exceeding 6.3 m (21 ft) or a weight of 1,000–1,300 kg (2,200–2,900 lb). Females are much smaller and rarely surpass 3 m (10 ft).It is also known as the estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile or informally as saltie. The saltwater crocodile is a large and opportunistic hypercarnivorous apex predator. It ambushes most of its prey and then drowns or swallows it whole. It is capable of prevailing over almost any animal that enters its territory, including other apex predators such as sharks, varieties of freshwater and saltwater fish including pelagic species, invertebrates such as crustaceans, various reptiles, birds and mammals, including humans.",
+      " The saltwater crocodile is the largest living reptile and crocodilian known to science. Males grow to a length of up to 6 m (20 ft), rarely exceeding 6.3 m (21 ft) or a weight of 1,000–1,300 kg (2,200–2,900 lb). Females are much smaller and rarely surpass 3 m (10 ft).It is also known as the estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile or informally as saltie. The saltwater crocodile is a large and opportunistic hypercarnivorous apex predator. It ambushes most of its prey and then drowns or swallows it whole. It is capable of prevailing over almost any animal that enters its territory, including other apex predators such as sharks, varieties of freshwater and saltwater fish including pelagic species, invertebrates such as crustaceans, various reptiles, birds and mammals, including humans.",
     continent: "Oceana",
   },
   {

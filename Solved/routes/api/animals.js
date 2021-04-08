@@ -7,7 +7,7 @@ router.route("/continent/:continent").get(animalController.findByContinent);
 
 // Matches with "/api/books/:id"
 router.route("/:id").get(animalController.findById);
-router.route();
+// router.route();
 // .put(animalController.update)
 // .delete(animalController.remove);
 
