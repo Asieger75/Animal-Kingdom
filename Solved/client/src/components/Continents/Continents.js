@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
 
+
 //function Continents(){
 
   class Continents extends React.Component {
