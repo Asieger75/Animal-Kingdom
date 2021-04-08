@@ -2,6 +2,7 @@ const path = require("path");
 const animal = require("../models/animal");
 const router = require("express").Router();
 const apiRoutes = require("./api");
+const home = require("../client/src/pages/home");
 
 // API Routes
 router.use("/api", apiRoutes);
@@ -15,6 +16,8 @@ router.use("/api", apiRoutes);
 //       console.log('error: ', animaerrorlseed )
 //     });
 // });
+
+router.use("/home", home);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
