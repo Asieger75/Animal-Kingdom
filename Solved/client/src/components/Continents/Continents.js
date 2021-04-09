@@ -1,6 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
+
+
 //function Continents(){
 
   class Continents extends React.Component {
@@ -9,6 +11,26 @@ import "./Continents.css"
       data: [],
       filteredData: []
     };
+
+    getData = () => {
+      fetch(`http://localhost:3000/api/animals`)
+        .then(response => response.json())
+        .then(data => {
+          const { query } = this.state;
+          this.setState({
+            data,
+            filteredData: data
+            });
+
+          // const filteredData = data.filter(element => {
+          //   return element.name.toLowerCase().includes(query.toLowerCase());
+          // });
+        });
+      };
+    
+      componentWillMount() {
+        this.getData();
+      }
   
     handleInputChange = event => {
       const query = event.target.value;
@@ -24,44 +46,48 @@ import "./Continents.css"
         };
       });
     }; 
+
+
+    filteredData = (posts) => {
   
-    getData = () => {
-      fetch(`http://localhost:3000/Animal-Kingdom`)
-        .then(response => response.json())
-        .then(data => {
-          const { query } = this.state;
-          const filteredData = data.filter(element => {
-            return element.name.toLowerCase().includes(query.toLowerCase());
-          });
-        });
-      };
-    
-      componentWillMount() {
-        this.getData();
-      }
+      if (!posts.length) return null;
+      
+      return posts.map((post, index) => (
+        <div key={index} className="animal-display">
+          <h3>{post.name}</h3>
+            <p>{post.type}</p>
+          <p>{post.synopsis}</p>
+          <p>{post.continent}</p> 
+          <hr></hr>
+        </div>
+      ));
+    };
+  
+  
+   
     
       render() {
         return (
           <div class= "data">
-
-            <title>Animal Kingdom</title>
-              <header class="jumbotron">
-                <h1 class="display-3">Welcome to the Animal Kingdom! </h1>
-                  <p class="lead">learn all about animals in their cooresponding continents!</p>
-                <p1 id="currentDay" class="leads"></p1>
-              </header>
             <br></br>
-
+            <h> Search for your favorite animal below!</h>
+            <br></br>
+            <br></br>
+             
             <div className="searchForm">
-              <form>
+              {/* <form> */}
                 <input
                   placeholder="Search for..."
                   value={this.state.query}
                   onChange={this.handleInputChange}
                 />
-              </form>
-            <div>{this.state.filteredData.map(i => <p>{i.name}</p>)}</div>
+              {/* </form> */}
+              <br></br>
+            {/* <div>{this.state.filteredData.map(i => <p>{i.name}</p>)}</div> */}
           </div>
+          <div className= "animals">
+              {this.filteredData(this.state.filteredData)}
+            </div>
         </div>
         );
       }
