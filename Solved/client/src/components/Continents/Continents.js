@@ -1,7 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Continents.css";
-
+import Asia from"../Map/Asia/Asia"
+import Australia from"../Map/Australia/Australia"
+import Europe from"../Map/Europe/Europe"
+import Antartica from"../Map/Antartica/Antartica"
+import Oceania from"../Map/Oceania/Oceania"
+import NorthAmerica from"../Map/NorthAmerica/NorthAmerica"
+import SouthAmerica from"../Map/SouthAmerica/SouthAmerica"
+import Africa from"../Map/Africa/Africa"
 function Continent() {
   return (
     <div class="data">
@@ -14,6 +21,16 @@ function Continent() {
         <p1 id="currentDay" class="leads"></p1>
       </header>
       <br></br>
+      <Asia animals = {[]}></Asia>
+      <Australia></Australia>
+      <Europe></Europe>
+      <Antartica></Antartica>
+      <Oceania></Oceania>
+      <NorthAmerica></NorthAmerica>
+      <SouthAmerica></SouthAmerica>
+      <Africa></Africa>
+
+
     </div>
   );
 }
