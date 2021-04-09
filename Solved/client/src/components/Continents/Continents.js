@@ -1,4 +1,46 @@
 import React from "react";
+<<<<<<< HEAD
+<<<<<<< HEAD
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Continents.css";
+import Asia from"../Map/Asia/Asia"
+import Australia from"../Map/Australia/Australia"
+import Europe from"../Map/Europe/Europe"
+import Antartica from"../Map/Antartica/Antartica"
+import Oceania from"../Map/Oceania/Oceania"
+import NorthAmerica from"../Map/NorthAmerica/NorthAmerica"
+import SouthAmerica from"../Map/SouthAmerica/SouthAmerica"
+import Africa from"../Map/Africa/Africa"
+function Continent() {
+  return (
+    <div class="data">
+      <title>Animal Kingdom</title>
+      <header class="jumbotron">
+        <h1 class="display-3">Welcome to the Animal Kingdom! </h1>
+        <p class="lead">
+          Learn all about animals in their corresponding continents!!
+        </p>
+        <p1 id="currentDay" class="leads"></p1>
+      </header>
+      <br></br>
+      <Asia animals = {[]}></Asia>
+      <Australia></Australia>
+      <Europe></Europe>
+      <Antartica></Antartica>
+      <Oceania></Oceania>
+      <NorthAmerica></NorthAmerica>
+      <SouthAmerica></SouthAmerica>
+      <Africa></Africa>
+
+
+    </div>
+  );
+}
+export default Continent;
+=======
+=======
+
+>>>>>>> f05682db60da91d44b0300f554d48f7f92297315
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
 
@@ -94,3 +136,8 @@ import "./Continents.css"
     }
 // }
 export default Continents;
+<<<<<<< HEAD
+>>>>>>> a0c1052c436179e53be7471c3a453c2328f6f21d
+=======
+
+>>>>>>> f05682db60da91d44b0300f554d48f7f92297315
