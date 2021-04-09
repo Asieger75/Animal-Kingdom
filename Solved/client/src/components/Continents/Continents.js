@@ -1,5 +1,6 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Continents.css";
 import Asia from"../Map/Asia/Asia"
@@ -37,6 +38,9 @@ function Continent() {
 }
 export default Continent;
 =======
+=======
+
+>>>>>>> f05682db60da91d44b0300f554d48f7f92297315
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
 
@@ -132,4 +136,8 @@ import "./Continents.css"
     }
 // }
 export default Continents;
+<<<<<<< HEAD
 >>>>>>> a0c1052c436179e53be7471c3a453c2328f6f21d
+=======
+
+>>>>>>> f05682db60da91d44b0300f554d48f7f92297315
