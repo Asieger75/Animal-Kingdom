@@ -32,20 +32,20 @@ class home extends React.Component {
     };
   
   
-    displayAnimal = (posts) => {
+    // displayAnimal = (posts) => {
   
-      if (!posts.length) return null;
+    //   if (!posts.length) return null;
       
-      return posts.map((post, index) => (
-        <div key={index} className="animal-display">
-          <h3>{post.name}</h3>
-            <p>{post.type}</p>
-          <p>{post.synopsis}</p>
-          <p>{post.continent}</p> 
-          <hr></hr>
-        </div>
-      ));
-    };
+    //   return posts.map((post, index) => (
+    //     <div key={index} className="animal-display">
+    //       <h3>{post.name}</h3>
+    //         <p>{post.type}</p>
+    //       <p>{post.synopsis}</p>
+    //       <p>{post.continent}</p> 
+    //       <hr></hr>
+    //     </div>
+    //   ));
+    // };
   
   
     render() {
@@ -56,10 +56,10 @@ class home extends React.Component {
             < NavTabs />
             <Continents />
             
-            <div className= "animals">
+            {/* <div className= "animals">
               {this.displayAnimal(this.state.posts)}
             </div>
-  
+   */}
             
       </div>
     );
