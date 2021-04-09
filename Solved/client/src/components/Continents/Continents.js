@@ -1,6 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
+import Africa from '../Map/Africa/Africa';
+import Antartica from '../Map/Antartica/Antartica';
+import Asia from '../Map/Asia/Asia';
+import Australia from '../Map/Australia/Australia';
+import Europe from '../Map/Europe/Europe';
+import NorthAmerica from '../Map/NorthAmerica/NorthAmerica';
+import Oceana from '../Map/Oceana/Oceana';
+import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
 
 
 //function Continents(){
@@ -62,32 +72,42 @@ import "./Continents.css"
         </div>
       ));
     };
-  
-  
    
     
       render() {
         return (
           <div class= "data">
             <br></br>
-            <h> Search for your favorite animal below!</h>
+            <h style={{fontFamily: "Courier New",  textDecoration: "underline",  fontSize: "20px"}}> 
+            Search for your favorite animal below!</h>
             <br></br>
             <br></br>
              
             <div className="searchForm">
               {/* <form> */}
                 <input
+                style={{fontFamily: "Courier New", width: "600px"}}
                   placeholder="Search for..."
                   value={this.state.query}
                   onChange={this.handleInputChange}
                 />
               {/* </form> */}
               <br></br>
+              <br></br>
             {/* <div>{this.state.filteredData.map(i => <p>{i.name}</p>)}</div> */}
           </div>
-          <div className= "animals">
+          <div className= "animals" style={{fontFamily: "Courier New", width: "700px", textAlign: "center", justifyContent: "center"}}>
               {this.filteredData(this.state.filteredData)}
             </div>
+
+            <Route exact path="/Africa" component={Africa} />
+        <Route exact path="/Antartica" component={Antartica} />
+        <Route path="/Asia" component={Asia} />
+        <Route exact path="/Australia" component={Australia} />
+        <Route exact path="/Europe" component={Europe} />
+        <Route exact path="/NorthAmerica" component={NorthAmerica} />
+        <Route path="/Oceana" component={Oceana} />
+        <Route path="/SouthAmerica" component={SouthAmerica} />
         </div>
         );
       }

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import './NavTabs.css';
+import background from "./header.jpg";
 
 function NavTabs() {
   const location = useLocation();
@@ -9,21 +11,30 @@ function NavTabs() {
     <div className= "data">
     <title>Animal Kingdom</title>
     <header class="jumbotron">
-      <h1 class="display-3">Welcome to the Animal Kingdom! </h1>
-        <p class="lead">Learn all about animals in their coresponding continents!</p>
+    <div style={{
+       backgroundImage: `url(${background})`,
+       height: '300px',
+       width: '100%'
+       }}>
+      <h1 class="display-3" style={{fontFamily: "Courier New",  fontSize: "50px"}}>Welcome to the Animal Kingdom </h1>
+        <p class="lead" style={{fontFamily: "Courier New"}}>Learn all about animals in their corresponding continents</p>
       <p1 id="currentDay" class="leads"></p1>
+      </div>
     </header>
   <br></br>
 
     <ul className="nav nav-tabs">
       <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+        <Link 
+        style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+        to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
           Home
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Africa/Africa"
+          style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Africa"
           className={location.pathname === "/Africa" ? "nav-link active" : "nav-link"}
         >
           Africa!
@@ -31,7 +42,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Antartica/Antartica"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Antartica"
           className={location.pathname === "/Antartica" ? "nav-link active" : "nav-link"}
         >
           Antartica!
@@ -39,7 +51,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Australia"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Australia"
           className={location.pathname === "/Australia" ? "nav-link active" : "nav-link"}
         >
           Australia!
@@ -47,7 +60,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Europe/Europe"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Europe"
           className={location.pathname === "/Europe" ? "nav-link active" : "nav-link"}
         >
           Europe!
@@ -55,7 +69,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/NorthAmerica/NorthAmerica"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/NorthAmerica"
           className={location.pathname === "/NorthAmerica" ? "nav-link active" : "nav-link"}
         >
           North America!
@@ -63,7 +78,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Oceana/Oceana"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Oceana"
           className={location.pathname === "/Oceana" ? "nav-link active" : "nav-link"}
         >
           Oceana!
@@ -71,7 +87,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/SouthAmerica/SouthAmerica"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/SouthAmerica"
           className={location.pathname === "/SouthAmerica" ? "nav-link active" : "nav-link"}
         >
           South America!
@@ -79,7 +96,8 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="../Map/Asia/Asia"
+         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          to="/Asia"
           className={location.pathname === "/Asia" ? "nav-link active" : "nav-link"}
         >
           Asia !
