@@ -18,7 +18,7 @@ app.use(routes);
 app.use('/api', routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/animaldb");
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}));
 

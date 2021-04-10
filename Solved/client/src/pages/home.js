@@ -54,7 +54,7 @@ class home extends React.Component {
     return (
       <div className="App" style={{backgroundColor: "lightGrey"}} >
             < NavTabs />
-            <Continents />
+            <Continents {...this.props}/>
             
             {/* <div className= "animals">
               {this.displayAnimal(this.state.posts)}

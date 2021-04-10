@@ -71,13 +71,13 @@ import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
         </div>
       ));
     };
-   
     
       render() {
+       console.log(this.props)
         return (
           <div class= "data">
             <br></br>
-            <h style={{fontFamily: "Courier New",  textDecoration: "underline",  fontSize: "20px"}}> 
+            <h style={{fontFamily: "Garamond",  textDecoration: "underline",  fontSize: "30px"}}> 
             Search for your favorite animal below!</h>
             <br></br>
             <br></br>
@@ -85,7 +85,7 @@ import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
             <div className="searchForm">
               {/* <form> */}
                 <input
-                style={{fontFamily: "Courier New", width: "600px"}}
+                style={{fontFamily: "Garamond", width: "600px"}}
                   placeholder="Search for..."
                   value={this.state.query}
                   onChange={this.handleInputChange}
@@ -95,18 +95,20 @@ import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
               <br></br>
             {/* <div>{this.state.filteredData.map(i => <p>{i.name}</p>)}</div> */}
           </div>
-          <div className= "animals" style={{fontFamily: "Courier New", width: "700px", textAlign: "center", justifyContent: "center"}}>
+          {this.props.location.pathname === "/" && 
+          <div className= "animals" style={{fontFamily: "Garamond", width: "700px", textAlign: "center", justifyContent: "center", flex: "wrap"}}>
               {this.filteredData(this.state.filteredData)}
             </div>
+          }
 
             <Route exact path="/Africa"> <Africa animals={this.state.data}> </Africa></Route>
-        <Route exact path="/Antartica" component={Antartica} />
-        <Route path="/Asia" component={Asia} />
-        <Route exact path="/Australia" component={Australia} />
-        <Route exact path="/Europe" component={Europe} />
-        <Route exact path="/NorthAmerica" component={NorthAmerica} />
-        <Route path="/Oceana" component={Oceana} />
-        <Route path="/SouthAmerica" component={SouthAmerica} />
+        <Route exact path="/Antartica"><Antartica animals={this.state.data}></Antartica></Route>
+        <Route path="/Asia"><Asia animals={this.state.data}></Asia></Route>
+        <Route exact path="/Australia"><Australia animals={this.state.data}></Australia></Route>
+        <Route exact path="/Europe"><Europe animals={this.state.data}></Europe></Route>
+        <Route exact path="/NorthAmerica"><NorthAmerica animals={this.state.data}></NorthAmerica></Route>
+        <Route path="/Oceana"><Oceana animals={this.state.data}></Oceana></Route>
+        <Route path="/SouthAmerica"><SouthAmerica animals={this.state.data}></SouthAmerica></Route>
         </div>
         );
       }
