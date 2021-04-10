@@ -13,7 +13,7 @@ import Home from "./pages/home";
       <div>
         <Router>
       <div>
-      <Route exact path="/" component={Home} />
+      <Route  path="/" component={Home} />
 
       {/* <Route exact path="/LinkTo" component={LinkTo} />
       <Route exact path="/LogIn" component={LogIn} />

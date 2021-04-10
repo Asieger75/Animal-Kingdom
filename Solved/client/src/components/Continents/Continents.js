@@ -99,7 +99,7 @@ import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
               {this.filteredData(this.state.filteredData)}
             </div>
 
-            <Route exact path="/Africa" component={Africa} />
+            <Route exact path="/Africa"> <Africa animals={this.state.data}> </Africa></Route>
         <Route exact path="/Antartica" component={Antartica} />
         <Route path="/Asia" component={Asia} />
         <Route exact path="/Australia" component={Australia} />
