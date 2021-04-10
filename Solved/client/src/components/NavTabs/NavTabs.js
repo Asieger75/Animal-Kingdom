@@ -28,81 +28,81 @@ function NavTabs() {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link 
-        style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+        style={{fontFamily: "Garamond",  textDecoration: "underline", textSize:'100px'}}
         to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
           Home
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+          style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/Africa"
           className={location.pathname === "/Africa" ? "nav-link active" : "nav-link"}
         >
-          Africa!
+          Africa
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/Antartica"
           className={location.pathname === "/Antartica" ? "nav-link active" : "nav-link"}
         >
-          Antartica!
+          Antartica
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/Australia"
           className={location.pathname === "/Australia" ? "nav-link active" : "nav-link"}
         >
-          Australia!
+          Australia
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/Europe"
           className={location.pathname === "/Europe" ? "nav-link active" : "nav-link"}
         >
-          Europe!
+          Europe
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/NorthAmerica"
           className={location.pathname === "/NorthAmerica" ? "nav-link active" : "nav-link"}
         >
-          North America!
+          North America
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/Oceana"
           className={location.pathname === "/Oceana" ? "nav-link active" : "nav-link"}
         >
-          Oceana!
+          Oceana
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline"}}
           to="/SouthAmerica"
           className={location.pathname === "/SouthAmerica" ? "nav-link active" : "nav-link"}
         >
-          South America!
+          South America
         </Link>
       </li>
       <li className="nav-item">
         <Link
-         style={{fontFamily: "Courier New",  textDecoration: "underline"}}
+         style={{fontFamily: "Garamond",  textDecoration: "underline", }}
           to="/Asia"
           className={location.pathname === "/Asia" ? "nav-link active" : "nav-link"}
         >
-          Asia !
+          Asia
         </Link>
       </li>
     </ul>

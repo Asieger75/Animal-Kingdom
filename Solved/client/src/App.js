@@ -4,6 +4,7 @@ import { render } from "react-dom";
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/home";
+import LinkTo from './components/UserAuthentication/LinkTo';
 // import LinkTo from './components/UserAuthentication/LinkTo';
 // import LogIn from './components/UserAuthentication/Login';
 // import SignUp from './components/UserAuthentication/SignUp';
@@ -12,8 +13,10 @@ import Home from "./pages/home";
     return (
       <div>
         <Router>
+          <LinkTo />
+
       <div>
-      <Route  path="/" component={Home} />
+      <Route  path="/" component={(props)=><Home {...props} />} />
 
       {/* <Route exact path="/LinkTo" component={LinkTo} />
       <Route exact path="/LogIn" component={LogIn} />
