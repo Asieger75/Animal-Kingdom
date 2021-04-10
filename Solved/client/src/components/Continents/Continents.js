@@ -1,48 +1,15 @@
-import React from "react";
-<<<<<<< HEAD
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Continents.css";
-import Asia from"../Map/Asia/Asia"
-import Australia from"../Map/Australia/Australia"
-import Europe from"../Map/Europe/Europe"
-import Antartica from"../Map/Antartica/Antartica"
-import Oceania from"../Map/Oceania/Oceania"
-import NorthAmerica from"../Map/NorthAmerica/NorthAmerica"
-import SouthAmerica from"../Map/SouthAmerica/SouthAmerica"
-import Africa from"../Map/Africa/Africa"
-function Continent() {
-  return (
-    <div class="data">
-      <title>Animal Kingdom</title>
-      <header class="jumbotron">
-        <h1 class="display-3">Welcome to the Animal Kingdom! </h1>
-        <p class="lead">
-          Learn all about animals in their corresponding continents!!
-        </p>
-        <p1 id="currentDay" class="leads"></p1>
-      </header>
-      <br></br>
-      <Asia animals = {[]}></Asia>
-      <Australia></Australia>
-      <Europe></Europe>
-      <Antartica></Antartica>
-      <Oceania></Oceania>
-      <NorthAmerica></NorthAmerica>
-      <SouthAmerica></SouthAmerica>
-      <Africa></Africa>
-
-
-    </div>
-  );
-}
-export default Continent;
-=======
-=======
-
->>>>>>> f05682db60da91d44b0300f554d48f7f92297315
+import React from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Continents.css"
+import Africa from '../Map/Africa/Africa';
+import Antartica from '../Map/Antartica/Antartica';
+import Asia from '../Map/Asia/Asia';
+import Australia from '../Map/Australia/Australia';
+import Europe from '../Map/Europe/Europe';
+import NorthAmerica from '../Map/NorthAmerica/NorthAmerica';
+import Oceana from '../Map/Oceana/Oceana';
+import SouthAmerica from '../Map/SouthAmerica/SouthAmerica';
 
 
 //function Continents(){
@@ -104,40 +71,45 @@ import "./Continents.css"
         </div>
       ));
     };
-  
-  
    
     
       render() {
         return (
           <div class= "data">
             <br></br>
-            <h> Search for your favorite animal below!</h>
+            <h style={{fontFamily: "Courier New",  textDecoration: "underline",  fontSize: "20px"}}> 
+            Search for your favorite animal below!</h>
             <br></br>
             <br></br>
              
             <div className="searchForm">
               {/* <form> */}
                 <input
+                style={{fontFamily: "Courier New", width: "600px"}}
                   placeholder="Search for..."
                   value={this.state.query}
                   onChange={this.handleInputChange}
                 />
               {/* </form> */}
               <br></br>
+              <br></br>
             {/* <div>{this.state.filteredData.map(i => <p>{i.name}</p>)}</div> */}
           </div>
-          <div className= "animals">
+          <div className= "animals" style={{fontFamily: "Courier New", width: "700px", textAlign: "center", justifyContent: "center"}}>
               {this.filteredData(this.state.filteredData)}
             </div>
+
+            <Route exact path="/Africa"> <Africa animals={this.state.data}> </Africa></Route>
+        <Route exact path="/Antartica" component={Antartica} />
+        <Route path="/Asia" component={Asia} />
+        <Route exact path="/Australia" component={Australia} />
+        <Route exact path="/Europe" component={Europe} />
+        <Route exact path="/NorthAmerica" component={NorthAmerica} />
+        <Route path="/Oceana" component={Oceana} />
+        <Route path="/SouthAmerica" component={SouthAmerica} />
         </div>
         );
       }
     }
 // }
 export default Continents;
-<<<<<<< HEAD
->>>>>>> a0c1052c436179e53be7471c3a453c2328f6f21d
-=======
-
->>>>>>> f05682db60da91d44b0300f554d48f7f92297315

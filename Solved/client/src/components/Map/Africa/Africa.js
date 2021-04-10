@@ -11,7 +11,8 @@ class Africa extends Component {
         })
 
         
-        return <div>{filteredAnimals}</div>
+        return <div>{filteredAnimals}</div>,
+        <p>hello!</p>
     }
 }
 export default Africa

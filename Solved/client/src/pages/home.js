@@ -52,7 +52,7 @@ class home extends React.Component {
   
       console.log('state', this.state)
     return (
-      <div className="App">
+      <div className="App" style={{backgroundColor: "lightGrey"}} >
             < NavTabs />
             <Continents />
             
