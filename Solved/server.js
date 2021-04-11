@@ -18,6 +18,11 @@ app.use("/api", routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/animaldb");
+<<<<<<< HEAD
+=======
+app.use(express.json())
+app.use(express.urlencoded({ extended: false}));
+>>>>>>> b9981497b1655bf2035cb288d716bd5d62b3c178
 
 // Start the API server
 app.listen(PORT, function () {

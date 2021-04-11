@@ -16,6 +16,8 @@ router.use("/api", apiRoutes);
 //     });
 // });
 
+// router.use("/home", home);
+
 // If no API routes are hit, send the React app
 router.use(function (req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
