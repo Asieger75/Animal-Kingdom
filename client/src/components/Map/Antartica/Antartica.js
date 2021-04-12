@@ -7,7 +7,7 @@ class Antartica extends Component {
       };
   
       getData = () => {
-        fetch(`http://localhost:3000/api/animals`)
+        fetch(`/api/animals`)
           .then(response => response.json())
           .then(data => {
             const { query } = this.state;
