@@ -22,6 +22,10 @@ A MERN application that allows users to search for wildlife by searching for ani
 - HTML
 - CSS
 
+## Installation
+
+- npm start
+
 ## Usage
 
 This application is search for wildlife by contient or name of the animal.
@@ -29,11 +33,11 @@ https://note-takeranton.herokuapp.com/
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/71462708/108620458-58935180-73fa-11eb-96a1-82125011421e.png)
+![Screenshot (19)](https://user-images.githubusercontent.com/71462708/114625008-9df83080-9c7f-11eb-801f-c0d12c32c4a3.png)
 
 ## Deployment
 
-[Site](https://antonneturner.github.io/New-Portfolio/)
+[Site](https://animal-kingdom12.herokuapp.com/)
 
 ## License
 
