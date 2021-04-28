@@ -2,7 +2,7 @@
 
 ## Description
 
-A MERN application that allows users to search for wildlife by searching for animal names or continents.
+- A MERN application that allows users to search for wildlife by searching for animal names or continents.
 
 ## Features
 
